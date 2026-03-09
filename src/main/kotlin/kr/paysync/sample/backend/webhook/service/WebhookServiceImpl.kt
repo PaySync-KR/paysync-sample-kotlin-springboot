@@ -16,14 +16,14 @@ class WebhookServiceImpl(
     override fun handleWebhook(headers: Map<String, List<String>>, rawBody: String) {
         try {
             webhook.verify(rawBody, headers)
+
+            log.info {
+                "정상 웹훅이 수신되었습니다: $rawBody"
+            }
         } catch (ex: Exception) {
             log.error(ex) {
                 "웹훅 검증에 실패했습니다. headers: $headers, rawBody: $rawBody"
             }
-        }
-
-        log.info {
-            "웹훅이 수신되었습니다: $rawBody"
         }
     }
 }
