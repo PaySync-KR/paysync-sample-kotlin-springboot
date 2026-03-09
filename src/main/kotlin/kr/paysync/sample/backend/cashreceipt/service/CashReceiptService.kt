@@ -14,7 +14,6 @@ interface CashReceiptService {
         offset: Long,
         limit: Int,
         status: CashReceiptStatus? = null,
-        issuerId: String? = null,
         corpNum: String? = null,
         type: CashReceiptType? = null,
         identifier: String? = null,

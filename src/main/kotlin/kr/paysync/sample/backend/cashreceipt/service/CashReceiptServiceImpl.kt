@@ -38,7 +38,6 @@ class CashReceiptServiceImpl(
         offset: Long,
         limit: Int,
         status: CashReceiptStatus?,
-        issuerId: String?,
         corpNum: String?,
         type: CashReceiptType?,
         identifier: String?,
@@ -51,7 +50,6 @@ class CashReceiptServiceImpl(
                     .queryParam("offset", offset)
                     .queryParam("limit", limit)
                     .queryParamIfPresent("status", Optional.ofNullable(status))
-                    .queryParamIfPresent("issuerId", Optional.ofNullable(issuerId))
                     .queryParamIfPresent("corpNum", Optional.ofNullable(corpNum))
                     .queryParamIfPresent("type", Optional.ofNullable(type))
                     .queryParamIfPresent("identifier", Optional.ofNullable(identifier))

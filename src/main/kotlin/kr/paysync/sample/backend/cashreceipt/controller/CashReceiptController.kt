@@ -38,14 +38,13 @@ class CashReceiptController(
         @RequestParam(defaultValue = "0") offset: Long,
         @RequestParam(defaultValue = "20") limit: Int,
         @RequestParam status: CashReceiptStatus?,
-        @RequestParam issuerId: String?,
         @RequestParam corpNum: String?,
         @RequestParam type: CashReceiptType?,
         @RequestParam identifier: String?,
         @RequestParam dateAfter: String?,
         @RequestParam dateBefore: String?
     ): ResponseEntity<ManyResult<CashReceipt>> {
-        val result = service.retrieveAll(offset, limit, status, issuerId, corpNum, type, identifier, dateAfter, dateBefore)
+        val result = service.retrieveAll(offset, limit, status, corpNum, type, identifier, dateAfter, dateBefore)
 
         return ResponseEntity.ok(result)
     }
