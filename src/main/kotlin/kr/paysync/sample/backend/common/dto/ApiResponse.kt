@@ -1,4 +1,4 @@
-package kr.paysync.sample.backend.paysync.dto
+package kr.paysync.sample.backend.common.dto
 
 class ApiResponse<T>(
     val code: String,

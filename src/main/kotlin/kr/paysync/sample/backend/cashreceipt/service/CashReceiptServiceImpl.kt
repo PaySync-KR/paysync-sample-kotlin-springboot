@@ -2,7 +2,7 @@ package kr.paysync.sample.backend.cashreceipt.service
 
 import kr.paysync.sample.backend.cashreceipt.dto.IssueCashReceiptRequest
 import kr.paysync.sample.backend.cashreceipt.model.CashReceipt
-import kr.paysync.sample.backend.paysync.dto.ApiResponse
+import kr.paysync.sample.backend.common.dto.ApiResponse
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestClient

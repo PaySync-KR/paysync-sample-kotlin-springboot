@@ -2,8 +2,8 @@ package kr.paysync.sample.backend.invoice.service
 
 import kr.paysync.sample.backend.invoice.dto.IssueInvoiceRequest
 import kr.paysync.sample.backend.invoice.model.Invoice
-import kr.paysync.sample.backend.paysync.dto.ApiResponse
-import kr.paysync.sample.backend.paysync.dto.PaginatedApiResponse
+import kr.paysync.sample.backend.common.dto.ApiResponse
+import kr.paysync.sample.backend.common.dto.PaginatedApiResponse
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestClient

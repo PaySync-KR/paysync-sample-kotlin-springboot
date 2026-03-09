@@ -1,7 +1,7 @@
 package kr.paysync.sample.backend.transaction.service
 
-import kr.paysync.sample.backend.paysync.dto.ApiResponse
-import kr.paysync.sample.backend.paysync.dto.PaginatedApiResponse
+import kr.paysync.sample.backend.common.dto.ApiResponse
+import kr.paysync.sample.backend.common.dto.PaginatedApiResponse
 import kr.paysync.sample.backend.transaction.model.Transaction
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service

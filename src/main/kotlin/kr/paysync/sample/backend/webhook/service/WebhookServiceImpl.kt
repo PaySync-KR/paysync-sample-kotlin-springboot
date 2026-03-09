@@ -2,7 +2,7 @@ package kr.paysync.sample.backend.webhook.service
 
 import com.standardwebhooks.Webhook
 import io.github.oshai.kotlinlogging.KotlinLogging
-import kr.paysync.sample.backend.paysync.config.PaySyncProperties
+import kr.paysync.sample.backend.common.config.PaySyncProperties
 import org.springframework.stereotype.Service
 
 @Service

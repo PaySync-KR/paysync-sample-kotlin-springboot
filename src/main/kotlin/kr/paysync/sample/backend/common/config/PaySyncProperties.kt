@@ -1,4 +1,4 @@
-package kr.paysync.sample.backend.paysync.config
+package kr.paysync.sample.backend.common.config
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 
